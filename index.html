@@ -1,0 +1,85 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" href="css/jquery-slidetabs.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="container">
+            <div id="demo" class="tabbable slideable">
+                
+                <div class="tab-container tab-sliding-active">
+
+                    <a href="#" class="tab-prev"></a>
+
+                    <div class="tab-slide-container">
+
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1" data-toggle="tab">Horizontal Tab 1</a></li>
+                            <li><a href="#tab2" data-toggle="tab">Horizontal Tab 2</a></li>
+                            <li><a href="#tab3" data-toggle="tab">Horizontal Tab 3</a></li>
+                            <li><a href="#tab4" data-toggle="tab">Horizontal Tab 4</a></li>
+                            <li><a href="#tab5" data-toggle="tab">Horizontal Tab 5</a></li>
+                            <li><a href="#tab6" data-toggle="tab">Horizontal Tab 6</a></li>
+                            <li><a href="#tab7" data-toggle="tab">Horizontal Tab 7</a></li>
+                            <li><a href="#tab8" data-toggle="tab">Horizontal Tab 8</a></li>
+                            <li><a href="#tab9" data-toggle="tab">Horizontal Tab 9</a></li>
+                        </ul>
+
+                    </div><!-- /.tab-slide-container -->
+
+                    <a href="#" class="tab-next"></a>
+                
+                </div><!-- /.tab-container -->
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <p>I'm in Section 1.</p>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <p>Howdy, I'm in Section 2.</p>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <p>Howdy, I'm in Section 3.</p>
+                    </div>
+                    <div class="tab-pane" id="tab4">
+                        <p>Howdy, I'm in Section 4.</p>
+                    </div>
+                    <div class="tab-pane" id="tab5">
+                        <p>Howdy, I'm in Section 5.</p>
+                    </div>
+                    <div class="tab-pane" id="tab6">
+                        <p>Howdy, I'm in Section 6.</p>
+                    </div>
+                    <div class="tab-pane" id="tab7">
+                        <p>Howdy, I'm in Section 7.</p>
+                    </div>
+                    <div class="tab-pane" id="tab8">
+                        <p>Howdy, I'm in Section 8.</p>
+                    </div>
+                    <div class="tab-pane" id="tab9">
+                        <p>Howdy, I'm in Section 9.</p>
+                    </div>
+                </div>
+
+            </div>
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-slidetabs.js"></script>
+        
+        <script>
+            jQuery(document).ready(function($) {
+                window.tabs = $('#demo').slidetabs().data('slidetabs');
+            });
+        </script>
+    </body>
+</html>
